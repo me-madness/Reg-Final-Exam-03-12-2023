@@ -11,6 +11,10 @@ for line in range(input_lines):
     if match:
         boss_name = match[1]
         title = match[2]
+        print(f"{boss_name}, The {title}") 
+        print(f">> Strength: {len(boss_name)}")
+        print(f">> Armor: {len(title)}")
+
     else:
         print(f"Access denied!")    
 
