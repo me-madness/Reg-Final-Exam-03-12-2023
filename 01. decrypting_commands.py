@@ -5,16 +5,22 @@ while command[0] != "Finish":
     if command[0] == "Replace":
         current_char = command[1]
         new_char = command[2]
-        new_message = message.replace(current_char, new_char)
-        print(f"{new_message}")
+        message = message.replace(current_char, new_char)
+        print(f"{message}")
     elif command[0] == "Cut":
-        pass
+        start_index = command[1]
+        end_index = command[2]
     elif command[0] == "Make":
-        pass
+        case_lower_upper = command[1]
+        if case_lower_upper == "Upper":
+            print(f"{message.upper()}")
+        else:
+            print(f"{message.lower()}")    
     elif command[0] == "Check":
         pass
     elif command[0] == "Sum":
-        pass
+        start_index = command[1]
+        end_index = command[2]
     
     
 # ILikeSoftUni
